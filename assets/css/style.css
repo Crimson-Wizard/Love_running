@@ -26,17 +26,19 @@ header {
   posistion: fixed;
   z-index: 99;
   width: 100%;
-  box-shadow: 0 2px 20px #3a3a3a;
-
-}
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  
+ }
 
   header a {
     text-decoration: none;
     color:inherit;
-
-    
   }
 
+  
   h1 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
@@ -54,29 +56,83 @@ header {
     margin-bottom: 1em;
   }
 
-  #active{
-    borer-bottom: 1px solid #3a3a3a;
+  .active{
+    border-bottom: 1px solid #3a3a3a;
   }
 
   /* navbarstyles with dropdown toggle*/
   nav {
     position: absolute;
     background-color: #ffffff;
-    left: 0;
-    padding: 0 1rem;
     width: 100%;
-    box-shadow: 0 2px 20px #3a3a3a;
+    left: 0;
+    padding:0 1rem;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: none;
+  
+    /*when i add this the nav bar is not showing up
+    top: 100%;*/
+    
+  }
+
+  /* nav toggle*/
+  #nav-toggle:checked ~ nav {
+    display: block;
+  }
+
+  #nav-toggle {
     display: none;
   }
 
+  .nav-toggle-label {
+    font-size: 2rem;
+  }
+  
 /*Main*/
 main {
   background-color: lightblue;
   flex: 1 0 auto;
+  
 
   }
 
+ 
+  
 /*Footer*/
 footer {
   background-color: orange;
 }
+
+  /* media query: tablets and larger (768px & up)*/
+  @media screen and (min-width: 768px) {
+    /*header*/
+    nav{
+      display: block;
+      position: relative;
+      box-shadow:none;
+      width: fit-content;
+      padding: 1rem;
+    }
+
+    /* moible menu*/
+    #menu { 
+      display:flex;
+    }
+
+    /* moves the nav bar to the right*/
+    #menu > li {
+      padding-left: 1em;
+     
+    }
+
+    /*hides the X nav label*/
+    .nav-toggle-label {
+      display: none;
+    }
+
+
+
+  }
+      
+  }
+  
