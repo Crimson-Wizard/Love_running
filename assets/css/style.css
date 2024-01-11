@@ -18,6 +18,14 @@ body {
   color:#3a3a3a;
   font-family: 'Lato', sans-serif;
 
+  h1, h2, h3 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: #252525;
+  }
+
+   
   
 /*header*/
 header {
@@ -39,12 +47,7 @@ header {
   }
 
   
-  h1 {
-    font-family: 'Oswald', sans-serif;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    color: #252525;
-  }
+  
 
   #menu {
     letter-spacing: 4px;
@@ -90,18 +93,51 @@ header {
   
 /*Main*/
 main {
-  background-color: lightblue;
   flex: 1 0 auto;
-  
-
   }
 
+  /*hero section*/
+  #hero {
+    height: 600px;
+    width: 100%;
+    background: url("../images/hero-image.webp") no-repeat center center;
+    posistion: relative;
+  } 
+
+  #cover-text {
+    /* final rgba value sets the opacity of the color*/
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 130%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+    
+  }
+
+  #cover-text > h2, #cover-text > h3 {
+    color: #ffffff;
+  }
  
   
 /*Footer*/
-footer {
-  background-color: orange;
+#social-networks {
+  text-align:center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-evenly;
+  list-style-type: none;
 }
+
+  #social-networks i {
+    font-size: 160%;
+    padding: 5%;
+    color: #3a3a3a;
+  }
+  
+  
 
   /* media query: tablets and larger (768px & up)*/
   @media screen and (min-width: 768px) {
@@ -136,8 +172,17 @@ footer {
       margin: 0 0.5rem;
     }
 
-
-
-      
+/*hero*/ 
+    #cover-text {
+      width: 300px;
+      right: 50px
+    }
   }
-  
+
+  /* large devices (laptoops and desktops, 992px and up) */
+  @media screen and (min-width: 992px) {
+    #menu a:hover {
+      border-bottom: 1px solid #3a3a3a;
+    }
+
+  }
