@@ -101,7 +101,7 @@ main {
     height: 600px;
     width: 100%;
     background: url("../images/hero-image.webp") no-repeat center center;
-    posistion: relative;
+    position: relative;
   } 
 
   #cover-text {
@@ -165,6 +165,31 @@ main {
     justify-content: center;
   }
 
+
+  #times {
+    background: url('../images/dublin-city.webp') no-repeat center/cover;
+    display:flex;
+    flex-wrap:wrap;
+
+  }
+
+  #times div {
+    color: #fafafa;
+    background-color: rgba(0, 0, 0, .6);
+    padding: 15px;
+    text-align: center;
+    /*this will not wrap on screens less than 400 px wide. each div will expand to fill the available space on its row*/ 
+    flex-basis: 200px;
+    flex-grow: 1;  
+    /*to create boxes around divs*/
+    border: 2px solid #fafafa;
+  }
+
+  #times h3 {
+/*override the heading colour set in general styles*/
+    color: #fafafa;
+  }
+
     
  
   
@@ -182,6 +207,7 @@ main {
     padding: 5%;
     color: #3a3a3a;
   }
+
   
   
 
