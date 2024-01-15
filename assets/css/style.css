@@ -76,9 +76,7 @@ header {
     padding:0 1rem;
     box-shadow: 0 2px 2px #3a3a3a;
     display: none;
-  
-    /*when i add this the nav bar is not showing up
-    top: 100%;*/
+    top: 100%;
     
   }
 
@@ -112,7 +110,7 @@ main {
     /* final rgba value sets the opacity of the color*/
     background-color: rgba(241, 109, 107, .7);
     font-size: 130%;
-    position: absolute;
+    position: absolute; 
     bottom: 30px;
     width: 80%;
     min-height: 200px;
@@ -357,7 +355,7 @@ main {
 /*hero*/ 
     #cover-text {
       width: 300px;
-      right: 50px
+      right: 50px;
     }
 
   /*reasons section*/
