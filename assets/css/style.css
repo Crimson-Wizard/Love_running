@@ -222,6 +222,16 @@ main {
     #photos {
       line-height: 0;
     }
+
+
+  /* media query: tablets and landscape phones (768px & up)*/
+  @media screen and (min-width: 576px) {
+    #photos {
+      column-count: 2;
+      column-gap: 0;
+      
+    
+  }
   
   
 
@@ -281,7 +291,13 @@ main {
       text-align: end;
       align-self: flex-end;
     }
+
+/* gallery */
+    #photos {
+      column-count: 3;
+    }
   
+    
   }
   
 
@@ -291,6 +307,10 @@ main {
       border-bottom: 1px solid #3a3a3a;
     }
 
+    /* gallery *display */ 
+    #photos {
+      column-count: 4;
+    }
   }
 
   /*for screens 1200px and larger*/
