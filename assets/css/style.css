@@ -212,6 +212,16 @@ main {
     color: #3a3a3a;
   }
 
+  /* gallery */
+        #photos img {
+            width: 100%;
+          line-height: 1em;
+        }
+
+
+    #photos {
+      line-height: 0;
+    }
   
   
 
